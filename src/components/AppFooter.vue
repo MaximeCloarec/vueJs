@@ -1,4 +1,6 @@
 <template>
+    <h1 v-html="elem"></h1>
+    <a v-bind:href="leLien">Google</a>
     <footer
         class="footer p-10 bg-base-300 text-base-content rounded-box shadow-lg"
     >
@@ -38,7 +40,12 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+
 // Pas de logique spécifique pour un composant de footer.
+const elem = "<p>toto</p>"
+const leLien = ref("http://www.google.com")
 </script>
 
 <style scoped>
