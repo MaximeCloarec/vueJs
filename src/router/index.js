@@ -13,6 +13,21 @@ const router = createRouter({
             name: "about",
             component: () => import("../pages/About.vue"),
         },
+        {
+            path: "/binding",
+            name: "bind",
+            component: () => import("../pages/exercice/event-binding.vue"),
+        },
+        {
+            path: "/button",
+            name: "button",
+            component: () => import("../pages/exercice/directive-v-on.vue"),
+        },
+        {
+            path: "/trucs",
+            name: "truc",
+            component: () => import("../pages/tp/tp-truc.vue"),
+        },
     ],
 });
 
