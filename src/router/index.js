@@ -28,6 +28,11 @@ const router = createRouter({
             name: "truc",
             component: () => import("../pages/tp/tp-truc.vue"),
         },
+        {
+            path: "/button2",
+            name: "btn",
+            component: () => import("../pages/tp/button.vue"),
+        },
     ],
 });
 
