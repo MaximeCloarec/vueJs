@@ -33,6 +33,16 @@ const router = createRouter({
             name: "btn",
             component: () => import("../pages/tp/button.vue"),
         },
+        {
+            path: "/style",
+            name:"style",
+            component: () => import("../pages/exercice/StyleDynamic.vue")
+        },
+        {
+            path:"/eval",
+            name:"evallluuu",
+            component: () => import("../pages/tp/eval.vue")
+        }
     ],
 });
 
