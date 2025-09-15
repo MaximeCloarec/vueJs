@@ -42,6 +42,22 @@ const router = createRouter({
             path:"/eval",
             name:"evallluuu",
             component: () => import("../pages/tp/eval.vue")
+        },
+        {
+            path:"/if",
+            name:"if",
+            component: () => import("../pages/exercice/if.vue")
+        },
+        {
+            path:"/life",
+            name:"life",
+            component: () => import("../pages/lesson/lifecycle.vue")
+
+        },
+        {
+            path:"/fetch",
+            name:"fetch",
+            component: () => import("../pages/exercice/fetch.vue")
         }
     ],
 });
