@@ -58,6 +58,16 @@ const router = createRouter({
             path:"/fetch",
             name:"fetch",
             component: () => import("../pages/exercice/fetch.vue")
+        },
+        {
+            path:"/parent",
+            name:"parent",
+            component: () => import("../pages/exercice/parent.vue")
+        },
+        {
+            path:"/list",
+            name:"list",
+            component: () => import("../pages/exercice/friendList.vue")
         }
     ],
 });

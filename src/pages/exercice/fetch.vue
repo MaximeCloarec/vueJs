@@ -2,7 +2,7 @@
     <div class="card bg-base-100 w-96 shadow-sm">
         <div class="card-body">
             <h2 class="card-title">Pokémon</h2>
-            <p v-if="pokemon" v-for="pokemonData in pokemon.results" class="badge badge-secondary">
+            <p v-if="pokemon" v-for="pokemonData,index in pokemon.results" :key="index" class="badge badge-secondary">
                 {{ pokemonData.name }}
             </p>
             <p v-else>Chargement...</p>
