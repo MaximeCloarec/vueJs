@@ -68,6 +68,16 @@ const router = createRouter({
             path:"/list",
             name:"list",
             component: () => import("../pages/exercice/friendList.vue")
+        },
+        {
+            path:"/chart",
+            name:"chart",
+            component: () => import("../pages/exercice/chartjs.vue")
+        },
+        {
+            path:"/pinia",
+            name:"pinia",
+            component: () => import("../pages/lesson/pinia.vue")
         }
     ],
 });
